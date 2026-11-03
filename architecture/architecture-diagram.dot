@@ -1,0 +1,19 @@
+digraph AWSArchitecture {
+  rankdir=TB; graph [label="Scalable & Highly Available Web Application on AWS", labelloc=t, fontsize=22];
+  node [shape=box, style="rounded,filled", fontname="Arial"];
+  Users -> Route53 -> CloudFront_WAF -> ALB;
+  subgraph cluster_vpc { label="VPC 10.0.0.0/16";
+    subgraph cluster_a { label="Availability Zone A";
+      PublicA [label="Public Subnet A\n10.0.1.0/24\nNAT Gateway A"];
+      AppA [label="Private App Subnet A\n10.0.11.0/24\nEC2 Auto Scaling"];
+      DBA [label="Private DB Subnet A\n10.0.21.0/24\nRDS Primary"];
+    }
+    subgraph cluster_b { label="Availability Zone B";
+      PublicB [label="Public Subnet B\n10.0.2.0/24\nNAT Gateway B"];
+      AppB [label="Private App Subnet B\n10.0.12.0/24\nEC2 Auto Scaling"];
+      DBB [label="Private DB Subnet B\n10.0.22.0/24\nRDS Standby"];
+    }
+    ALB -> AppA; ALB -> AppB; AppA -> DBA; AppB -> DBB; DBA -> DBB [label="Multi-AZ standby", style=dashed];
+  }
+  Operations [label="Systems Manager • CloudWatch • SNS"];
+}
