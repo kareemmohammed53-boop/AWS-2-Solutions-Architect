@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<rect width="1400" height="850" fill="#f8fafc"/>
+<text x="700" y="55" font-family="Arial" font-size="30" font-weight="bold" text-anchor="middle" fill="#172554">Scalable &amp; Highly Available Web Application on AWS</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="45" y="110" width="1310" height="105" rx="18" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+<g fill="#fff" stroke="#6366f1" stroke-width="2">
+<rect x="90" y="135" width="210" height="58" rx="12"/><rect x="390" y="135" width="210" height="58" rx="12"/><rect x="690" y="135" width="210" height="58" rx="12"/><rect x="990" y="135" width="250" height="58" rx="12"/>
+</g>
+<g font-size="18" fill="#1e293b"><text x="195" y="171">Users</text><text x="495" y="171">Route 53</text><text x="795" y="171">CloudFront</text><text x="1115" y="171">AWS WAF</text></g>
+<g stroke="#64748b" stroke-width="3" fill="none"><path d="M300 164H390 M600 164H690 M900 164H990"/></g>
+<rect x="45" y="255" width="1310" height="530" rx="20" fill="#f0fdf4" stroke="#16a34a" stroke-width="3"/>
+<text x="700" y="295" font-size="22" font-weight="bold" fill="#166534">Amazon VPC — 10.0.0.0/16</text>
+<rect x="80" y="325" width="600" height="420" rx="16" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<rect x="720" y="325" width="600" height="420" rx="16" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="380" y="360" font-size="20" fill="#1d4ed8">Availability Zone A</text><text x="1020" y="360" font-size="20" fill="#1d4ed8">Availability Zone B</text>
+<g fill="#fff" stroke="#0d9488" stroke-width="2"><rect x="115" y="390" width="530" height="75" rx="12"/><rect x="755" y="390" width="530" height="75" rx="12"/></g>
+<g fill="#134e4a" font-size="18"><text x="380" y="420">Public Subnet A — 10.0.1.0/24</text><text x="380" y="447">NAT Gateway A</text><text x="1020" y="420">Public Subnet B — 10.0.2.0/24</text><text x="1020" y="447">NAT Gateway B</text></g>
+<g fill="#fff" stroke="#2563eb" stroke-width="2"><rect x="115" y="490" width="530" height="105" rx="12"/><rect x="755" y="490" width="530" height="105" rx="12"/></g>
+<g fill="#1e3a8a" font-size="18"><text x="380" y="522">Private App Subnet A</text><text x="380" y="550">EC2 instances — Auto Scaling</text><text x="1020" y="522">Private App Subnet B</text><text x="1020" y="550">EC2 instances — Auto Scaling</text></g>
+<g fill="#fff" stroke="#9333ea" stroke-width="2"><rect x="115" y="620" width="530" height="90" rx="12"/><rect x="755" y="620" width="530" height="90" rx="12"/></g>
+<g fill="#581c87" font-size="18"><text x="380" y="655">Private DB Subnet A</text><text x="380" y="684">Amazon RDS Primary</text><text x="1020" y="655">Private DB Subnet B</text><text x="1020" y="684">Amazon RDS Standby</text></g>
+<g stroke="#475569" stroke-width="3" fill="none"><path d="M1115 193V235H700V255 M680 542H720 M645 665H755"/></g>
+<text x="700" y="770" font-size="15" fill="#334155">Operations: Systems Manager Session Manager • CloudWatch Monitoring &amp; Alarms • SNS Notifications</text>
+</g></svg>
