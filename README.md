@@ -6,7 +6,7 @@ This project documents a scalable web application architecture on Amazon Web Ser
 > **Implementation accuracy:** This repository documents the supplied architecture design. Do not describe resources as deployed or tested until you verify them in your AWS account. Replace deployment placeholders with actual values.
 
 ## Architecture
-![AWS solution architecture](architecture/architecture-diagram.png)
+![AWS solution architecture](architecture/architecture-diagram.svg)
 
 Editable diagram source: [architecture/aws-scalable-web-app.drawio](architecture/aws-scalable-web-app.drawio)
 
